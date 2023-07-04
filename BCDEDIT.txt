@@ -1,0 +1,57 @@
+bcdedit /deletevalue useplatformclock
+bcdedit /set disabledynamictick yes
+bcdedit /deletevalue useplatformtick
+bcdedit /timeout 0
+bcdedit /set nx optin
+bcdedit /set tpmbootentropy ForceDisable
+bcdedit /set tscsyncpolicy Enhanced
+bcdedit /set pae forceenable
+bcdedit /set x2apicpolicy enable
+bcdedit /set "{current}" gamingpriority high
+bcdedit /set uselegacyapicmode no
+fsutil behavior set DisableLastAccess 1
+bcdedit /set linearaddress57 optout
+bcdedit /set increaseuserva 268435328
+bcdedit /set firstmegabytepolicy UseAll
+bcdedit /set avoidlowmemory 0x8000000
+bcdedit /set nolowmem Yes
+bcdedit /set configaccesspolicy Default
+bcdedit /set extendedinput Yes
+bcdedit /set MSI Default
+bcdedit /set bootmenupolicy Standard 
+bcdedit /set usefirmwarepcisettings No  
+bcdedit /set vsmlaunchtype Off 
+bcdedit /set ems No 
+bcdedit /set forcefipscrypto No
+bcdedit /set noumex Yes
+bcdedit /set bootems No 
+bcdedit /set graphicsmodedisabled No 
+bcdedit /set extendedinput Yes 
+bcdedit /set highestmode Yes  
+bcdedit /set configflags 0
+bcdedit /set uselegacyapicmode No 
+bcdedit /set halbreakpoint No 
+bcdedit /set forcelegacyplatform No
+bcdedit /set vm No 
+bcdedit /set bootux disabled
+bcdedit /set hypervisorlaunchtype off
+bcdedit /set disableelamdrivers Yes
+bcdedit /set debug No
+bcdedit /set bootdebug No
+bcdedit /set integrityservices disable
+bcdedit /set usephysicaldestination No
+bcdedit /deletevalue restrictapiccluster
+fsutil behavior set encryptpagingfile 0
+fsutil behavior set mftzone 2
+fsutil behavior set memoryusage 2
+bcdedit /set clustermodeaddressing Yes
+bcdedit /set {globalsettings} custom:16000069 true
+
+
+Bios Intel SGX aus!
+bcdedit /set isolatedcontext No
+bcdedit /set allowedinmemorysettings 0x0
+
+Kann zu Problemen mit AntiCheat Software führen!
+bcdedit /set {current} nx AlwaysOff
+
