@@ -1,5 +1,4 @@
-# Win10-x64-LTSC-Gaming-Tweaks
-All tweaks found by me ID'
+# Win10-x64-LTSC-Tweaks (in terms of Gaming)
 
 Still highly experimental Gaming-Tweaks to be changed mostly in Reg.!´(Stay away toxic Tweak Community thanks!)
 Using Ghidra also ChatGPT
